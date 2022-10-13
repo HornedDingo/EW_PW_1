@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+
+</head>
+    <body style="margin-top: 10rem">
+        <form class="mainForm" style="text-align: center">
+
+            <label style="font-size: 36px">Калькулятор</label>
+
+            <br>
+            <br>
+
+            <input style="margin-top: 2rem" name="value1" type="number" id="value1">
+
+            <br>
+            <br>
+
+            <select name="operation" id="operation">
+                <option value="+" selected>+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+            <br>
+            <br>
+
+            <input name="value2" type="number" id="value2">
+
+            <br>
+            <br>
+
+            <input formaction="/calc"
+                   formmethod="get"
+                   value="Get"
+                   type="submit">
+
+            <input formaction="/calc"
+                   formmethod="post"
+                   value="Post"
+                   type="submit">
+        </form>
+    </body>
+</html>
+
